@@ -1,9 +1,9 @@
 package pio.daw;
 
 abstract class AbstractItem {
-    private String name;
-    private String id;
-    private String description;
+    protected String name;
+    protected String id;
+    protected String description;
 
     public AbstractItem(String name, String id, String description){
         this.name = name;
@@ -12,5 +12,7 @@ abstract class AbstractItem {
     }
 
     public abstract void printToConsole();
+      
+    
     
 }
